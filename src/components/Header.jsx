@@ -7,12 +7,12 @@ import { FaPlus } from "react-icons/fa6";
 import { RxDotsVertical } from "react-icons/rx";
 import { CiDollar, CiCalendar } from "react-icons/ci";
 import Myimage from '@/images/image1.png'
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg__dark px-lg-3">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Genny</a>
+                    <a className="navbar-brand" href="/">Genny</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span className="navbar-toggler-icon"></span>
                     </button>

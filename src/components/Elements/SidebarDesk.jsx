@@ -8,7 +8,7 @@ import { CiDollar, CiCalendar } from "react-icons/ci";
 import Myimage from '@/images/image1.png'
 import Image from 'next/image';
 
-const SidebarDesk = () => {
+const SidebarDesk = (props) => {
     return (
         <div className='sidebar h-100  d-flex flex-column justify-content-between'>
             <div>
@@ -160,11 +160,11 @@ const SidebarDesk = () => {
                     &nbsp;
                     Subscription
                 </button>
-                <button type='button' className='sidebar__button'>
+                <a href='/Settings' className={props.activeClass == "Settings" ? `sidebar__button__active` : `sidebar__button`}>
                     <FaCog />
                     &nbsp;
                     Settings
-                </button>
+                </a>
                 <button type='button' className='sidebar__button'>
                     <FaUserPlus />
                     &nbsp;
