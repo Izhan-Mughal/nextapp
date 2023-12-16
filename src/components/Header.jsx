@@ -7,6 +7,7 @@ import { FaPlus } from "react-icons/fa6";
 import { RxDotsVertical } from "react-icons/rx";
 import { CiDollar, CiCalendar } from "react-icons/ci";
 import Myimage from '@/images/image1.png'
+import InviteModal from './Modals/InviteModal';
 const Header = (props) => {
     return (
         <header>
@@ -41,7 +42,7 @@ const Header = (props) => {
                         </ul>
                         <form className="d-flex align-items-center gap-3">
 
-                            <button className="btn btn-outline-light" type='button'><IoMdPersonAdd />
+                            <button className="btn btn-outline-light" type='button' data-bs-toggle="modal" data-bs-target="#exampleModal"><IoMdPersonAdd />
                                 &nbsp;Invite</button>
                             <div className='profile__icon'></div>
                         </form>
@@ -209,7 +210,7 @@ const Header = (props) => {
                                 &nbsp;
                                 Settings
                             </button>
-                            <button type='button' className='sidebar__button'>
+                            <button type='button' data-bs-toggle="modal" data-bs-target="#exampleModal" className='sidebar__button'>
                                 <FaUserPlus />
                                 &nbsp;
                                 Invite Members
@@ -222,6 +223,7 @@ const Header = (props) => {
                     </div>
                 </div>
             </div>
+            <InviteModal/>
         </header>
     )
 }

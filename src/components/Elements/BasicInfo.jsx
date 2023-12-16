@@ -12,15 +12,15 @@ const BasicInfo = () => {
                 <div className="tabs__section mt-4">
                     <ul className="nav nav-tabs" id="myTab" role="tablist">
                         <li className="nav-item" role="presentation">
-                            <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Basic Info
+                            <a href='/setting' className="nav-link active" id="home-tab" data-bs-target="#home"  >Basic Info
 
-                            </button>
+                            </a>
                         </li>
                         <li className="nav-item" role="presentation">
-                            <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Subscription</button>
+                            <a href='/subscription' className="nav-link" id="profile-tab" data-bs-target="#profile"  >Subscription</a>
                         </li>
                         <li className="nav-item" role="presentation">
-                            <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Members</button>
+                            <a href='/members' className="nav-link" id="contact-tab" data-bs-target="#contact"  >Members</a>
                         </li>
                     </ul>
                     {/* <div className="tab-content" id="myTabContent">

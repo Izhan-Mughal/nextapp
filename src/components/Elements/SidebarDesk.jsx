@@ -149,23 +149,23 @@ const SidebarDesk = (props) => {
                     </div>
                     <hr className='text-white mt-2' />
                 </div>
-                <button type='button' className='sidebar__button'>
+                <a href='/' className={props.activeClass == "pricing" ? `sidebar__button__active` : `sidebar__button`}>
                     <CiDollar />
 
                     &nbsp;
                     Pricing
-                </button>
-                <button type='button' className='sidebar__button'>
+                </a>
+                <a href='/subscription' className={props.activeClass == "subscription" ? `sidebar__button__active` : `sidebar__button`}>
                     <CiCalendar />
                     &nbsp;
                     Subscription
-                </button>
-                <a href='/Settings' className={props.activeClass == "Settings" ? `sidebar__button__active` : `sidebar__button`}>
+                </a>
+                <a href='/setting' className={props.activeClass == "Settings" ? `sidebar__button__active` : `sidebar__button`}>
                     <FaCog />
                     &nbsp;
                     Settings
                 </a>
-                <button type='button' className='sidebar__button'>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" className={props.activeClass == "invite" ? `sidebar__button__active` : `sidebar__button`}>
                     <FaUserPlus />
                     &nbsp;
                     Invite Members
